@@ -13,3 +13,6 @@ This tool requires users to have peak tables with compound name, total peak area
 4) Sit back and allow program to process samples.
 
 NOTE: MATLAB will sometimes flash a red error message about column headers but allow the code to continue running, this will not impact the output results.
+
+### Troubleshooting
+For troubleshooting please contact rgiebelh@ualberta.ca or james.harynuk@ualberta.ca
