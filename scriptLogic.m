@@ -18,7 +18,7 @@ function [logicOut] = scriptLogic(massSpecTable)
 
         logicOut = 1;
 
-    elseif massSpecMZs(1) == 43 || massSpecMZs(2) == 147
+    elseif massSpecMZs(1) == 43 || massSpecMZs(1) == 147
 
         logicOut = 1;
 
