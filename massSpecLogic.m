@@ -1,7 +1,6 @@
 function [tdpaSample, peakTableOut] = massSpecLogic(peakTable)
 
     %store data as tables
-    quantMasses = peakTable(:, 5);
     massSpectra = peakTable(:, 11);
     areasPeak = peakTable(:, 9);
 
@@ -55,15 +54,6 @@ function [tdpaSample, peakTableOut] = massSpecLogic(peakTable)
 
         %only if logic out is 1 do we do anythign with the quant ion
         if logicOut == 1
-
-            %quantIonString = strrep(quantMassesCell{i}, '"', '');
-            %quantIoni = str2double(quantIonString);
-% 
-            indexQuantIon = find(sortMassSpecTable.MZs == table2array(quantMasses(ii, 1)), 1);
-% 
-            quantIonIntent = sortMassSpecTable.Intensities(indexQuantIon); %#ok
-% 
-%             tdpaSample = tdpaSample + quantIonIntent;
 
             tdpaSample = tdpaSample + areasPeakArray(ii);
 
